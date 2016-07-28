@@ -1,0 +1,37 @@
+.component.list.layoutList {
+    position: relative; }
+    .component.list.layoutList > .body > .item > .layout > .icon {
+        width: 84px;
+        font-family: 'icons';
+        text-align: center; }
+        .component.list.layoutList > .body > .item > .layout > .icon.yellow {
+            color: #FEC500; }
+        .component.list.layoutList > .body > .item > .layout > .icon.red {
+            color: #FF0000; }
+        .component.list.layoutList > .body > .item > .layout > .icon.green {
+            color: #04E900; }
+        .component.list.layoutList > .body > .item > .layout > .icon.blue {
+            color: #1CACFF; }
+    .component.list.layoutList > .body > .item > .layout > .number {
+        width: 84px; }
+    .component.list.layoutList .noData {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        display: block;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0; }
+        .component.list.layoutList .noData:before {
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+            content: ""; }
+        .component.list.layoutList .noData > div {
+            display: inline-block;
+            vertical-align: middle;
+            width: 100%;
+            text-align: center; }
+        .component.list.layoutList .noData.hidden {
+            visibility: hidden; }

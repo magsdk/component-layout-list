@@ -1,7 +1,7 @@
 Layout list component
 ==============
 
-[![NPM version](https://img.shields.io/npm/v/spa-component-layout-list.svg?style=flat-square)](https://www.npmjs.com/package/spa-component-layout-list)
+[![NPM version](https://img.shields.io/npm/v/mag-component-layout-list.svg?style=flat-square)](https://www.npmjs.com/package/mag-component-layout-list)
 [![Dependencies Status](https://img.shields.io/david/spasdk/component-layout-list.svg?style=flat-square)](https://david-dm.org/spasdk/component-layout-list)
 [![Gitter](https://img.shields.io/badge/gitter-join%20chat-blue.svg?style=flat-square)](https://gitter.im/DarkPark/spasdk)
 
@@ -12,7 +12,7 @@ Layout list is a component to build user interface, an instance of [Component](h
 ## Installation ##
 
 ```bash
-npm install spa-component-layout-list
+npm install mag-component-layout-list
 ```
 
 
@@ -21,7 +21,7 @@ npm install spa-component-layout-list
 Add the singleton to the scope:
 
 ```js
-var list = require('spa-component-layout-list');
+var list = require('mag-component-layout-list');
 ```
 
 
@@ -38,4 +38,4 @@ Pull requests are welcomed with respect to the [JavaScript Code Style](https://g
 
 ## License ##
 
-`spa-component-layout-list` is released under the [MIT License](license.md).
+`mag-component-layout-list` is released under the [MIT License](license.md).

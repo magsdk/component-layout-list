@@ -6,8 +6,8 @@
 
 'use strict';
 
-var List = require('./spa-list'),
-    Layout = require('./spa-layout');
+var List = require('stb-list'),
+    Layout = require('stb-layout');
 
 /**
  *  Layout list contains array of layout components
