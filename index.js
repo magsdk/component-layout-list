@@ -3,10 +3,12 @@
  * @copyright Stanislav Kalashnik <darkpark.main@gmail.com>
  */
 
+/* eslint no-path-concat: 0 */
+
 'use strict';
 
-var List = require('stb-list'),
-    Layout = require('stb-layout');
+var List = require('stb-component-list'),
+    Layout = require('stb-component-layout');
 
 /**
  *  Layout list contains array of layout components
@@ -14,7 +16,7 @@ var List = require('stb-list'),
  * @constructor
  * @extends List
  *
- * @param {object} config object
+ * @param {Object} config object
  * @param {Element} [config.noData=''] element or string to display if set empty data
  *
  * @example
@@ -71,8 +73,7 @@ var List = require('stb-list'),
  * });
  */
 function LayoutList ( config ) {
-    var self = this,
-        $wrap;
+    var self = this;
 
     config = config || {};
 
@@ -140,7 +141,7 @@ LayoutList.prototype.constructor = LayoutList;
  * Default render function
  *
  * @param {Element} $item in list
- * @param {object} config to render layout element
+ * @param {Object} config to render layout element
  */
 LayoutList.prototype.renderItemDefault = function ( $item, config ) {
     var layout, i;
@@ -159,8 +160,8 @@ LayoutList.prototype.renderItemDefault = function ( $item, config ) {
         }
 
         layout = new Layout({
-            focusable:false,
-            data:config.items
+            focusable: false,
+            data: config.items
         });
 
         $item.appendChild(layout.$node);
@@ -171,7 +172,7 @@ LayoutList.prototype.renderItemDefault = function ( $item, config ) {
         // focus layoutList if click on layout
         layout.addListener('click', function () {
             // add inner property to set that event comes from inner component
-            this.parent.emit('click:item', {$item:$item, inner:true});
+            this.parent.emit('click:item', {$item: $item, inner: true});
         });
 
         if ( config.click ) {
@@ -201,8 +202,10 @@ LayoutList.prototype.init = function ( config ) {
 
     List.prototype.init.call(this, config);
     if ( config.noData ) {
-        if ( DEBUG ) {
-            if ( typeof config.noData !== 'string' && !(config.noData instanceof Element) ) { throw new Error(__filename + ': wrong config.$noData type'); }
+        if ( DEVELOP ) {
+            if ( typeof config.noData !== 'string' && !(config.noData instanceof Element) ) {
+                throw new Error(__filename + ': wrong config.$noData type');
+            }
         }
         this.$noData.innerHTML = '';
         if ( config.noData instanceof Element ) {

@@ -1,7 +1,7 @@
 {
     "name": "mag-component-layout-list",
     "version": "1.0.0",
-    "description": "Base Layout list implementation.",
+    "description": "Base layout list implementation.",
     "author": {
         "name": "Stanislav Kalashnik",
         "email": "darkpark.main@gmail.com"
@@ -16,7 +16,8 @@
         "jsdoc": "jsdoc --destination doc *.js readme.md"
     },
     "dependencies": {
-        "stb-component": "stbsdk/component"
+        "stb-component-list": "stbsdk/component-list",
+        "stb-component-layout": "stbsdk/component-layout"
     },
     "devDependencies": {
         "mag-eslint-config": "magsdk/eslint-config"
@@ -27,7 +28,8 @@
         "framework",
         "visual",
         "component",
-        "layout-list"
+        "layout",
+        "list"
     ],
     "license": "MIT"
 }
