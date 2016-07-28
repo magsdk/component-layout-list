@@ -1,0 +1,56 @@
+.component.list.layoutList {
+  >.body {
+    >.item {
+      >.layout {
+        >.icon {
+          width: $panelTitleHeight;
+          font-family: 'icons';
+          text-align: center;
+          &.yellow {
+            color: #FEC500;
+          }
+          &.red {
+            color: #FF0000;
+          }
+          &.green {
+            color: #04E900;
+          }
+          &.blue {
+            color:#1CACFF;
+          }
+        }
+        >.number {
+          width: $panelTitleHeight;
+        }
+
+      }
+    }
+  }
+  position: relative;
+  .noData {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    &:before {
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+      content: "";
+    }
+    >div {
+      display: inline-block;
+      vertical-align: middle;
+      width: 100%;
+      text-align: center;
+
+    }
+    &.hidden {
+      visibility: hidden;
+    }
+  }
+}
