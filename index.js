@@ -8,7 +8,7 @@
 'use strict';
 
 var List = require('stb-component-list'),
-    Layout = require('stb-component-layout');
+    Layout = require('mag-component-layout');
 
 /**
  *  Layout list contains array of layout components
