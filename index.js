@@ -186,15 +186,15 @@ LayoutList.prototype.renderItemDefault = function ( $item, config ) {
 };
 
 
-LayoutList.prototype.setData = function ( config ) {
-    List.prototype.setData.call(this, config);
-
-    if ( config.data && config.data.length ) {
-        this.$noData.classList.add('hidden');
-    } else {
-        this.$noData.classList.remove('hidden');
-    }
-};
+// LayoutList.prototype.setData = function ( config ) {
+//     List.prototype.setData.call(this, config);
+//
+//     if ( config.data && config.data.length ) {
+//         this.$noData.classList.add('hidden');
+//     } else {
+//         this.$noData.classList.remove('hidden');
+//     }
+// };
 
 
 LayoutList.prototype.init = function ( config ) {
@@ -216,13 +216,12 @@ LayoutList.prototype.init = function ( config ) {
             this.$noData.appendChild($wrap);
         }
     }
-    //if ( config.data && config.data.length ) {
-    //    this.$noData.classList.add('hidden');
-    //} else {
-    //    this.$noData.classList.remove('hidden');
-    //}
 
-
+    if ( config.data && config.data.length ) {
+       this.$noData.classList.add('hidden');
+    } else {
+       this.$noData.classList.remove('hidden');
+    }
 };
 
 LayoutList.prototype.renderItem = LayoutList.prototype.renderItemDefault;
