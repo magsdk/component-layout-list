@@ -89,7 +89,7 @@ function LayoutList ( config ) {
      */
     this.$noData = null;
 
-    config.className = 'layoutList ' + (config.className || '');
+    //config.className = 'layoutList ' + (config.className || '');
 
     config.propagate = config.propagate || true;
 
@@ -135,6 +135,10 @@ function LayoutList ( config ) {
 
 LayoutList.prototype = Object.create(List.prototype);
 LayoutList.prototype.constructor = LayoutList;
+
+// set component name
+LayoutList.prototype.name = 'mag-component-layout-list';
+
 
 /*eslint id-length:0*/
 /**

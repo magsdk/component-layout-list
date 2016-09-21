@@ -1,21 +1,26 @@
-/* mag-component-layout-list: release */
-.component.list.layoutList {
-    position: relative; }
-    .component.list.layoutList > .body > .item > .layout > .icon {
+.mag-component-footer {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    position: relative;
+    outline: 1px dashed #005000;
+    outline-offset: -1px; }
+    .mag-component-footer.hidden {
+        display: none; }
+    .mag-component-footer > .body > .item > .mag-component-layout > .icon {
         width: 84px;
         font-family: 'icons';
         text-align: center; }
-        .component.list.layoutList > .body > .item > .layout > .icon.yellow {
+        .mag-component-footer > .body > .item > .mag-component-layout > .icon.yellow {
             color: #FEC500; }
-        .component.list.layoutList > .body > .item > .layout > .icon.red {
+        .mag-component-footer > .body > .item > .mag-component-layout > .icon.red {
             color: #FF0000; }
-        .component.list.layoutList > .body > .item > .layout > .icon.green {
+        .mag-component-footer > .body > .item > .mag-component-layout > .icon.green {
             color: #04E900; }
-        .component.list.layoutList > .body > .item > .layout > .icon.blue {
+        .mag-component-footer > .body > .item > .mag-component-layout > .icon.blue {
             color: #1CACFF; }
-    .component.list.layoutList > .body > .item > .layout > .number {
+    .mag-component-footer > .body > .item > .mag-component-layout > .number {
         width: 84px; }
-    .component.list.layoutList .noData {
+    .mag-component-footer .noData {
         position: absolute;
         height: 100%;
         width: 100%;
@@ -24,15 +29,17 @@
         left: 0;
         right: 0;
         bottom: 0; }
-        .component.list.layoutList .noData:before {
+        .mag-component-footer .noData:before {
             display: inline-block;
             height: 100%;
             vertical-align: middle;
             content: ""; }
-        .component.list.layoutList .noData > div {
+        .mag-component-footer .noData > div {
             display: inline-block;
             vertical-align: middle;
             width: 100%;
             text-align: center; }
-        .component.list.layoutList .noData.hidden {
+        .mag-component-footer .noData.hidden {
             visibility: hidden; }
+    .mag-component-footer.focus {
+        outline: 1px dashed red; }
