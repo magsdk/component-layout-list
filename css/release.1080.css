@@ -1,3 +1,78 @@
+.stb-component-list {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    background-color: #333;
+    width: 100%; }
+    .stb-component-list.hidden {
+        display: none; }
+    .stb-component-list > .item {
+        cursor: pointer;
+        padding: 0 12px;
+        vertical-align: middle;
+        height: 72px;
+        line-height: 72px; }
+        .stb-component-list > .item.mark {
+            background-color: green;
+            color: black; }
+        .stb-component-list > .item.focus {
+            background-color: orange;
+            color: black; }
+        .stb-component-list > .item.focus.mark {
+            background-color: #ae7200;
+            color: white; }
+    .stb-component-list.horizontal {
+        display: table;
+        table-layout: fixed;
+        width: 100%; }
+        .stb-component-list.horizontal > .item {
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle; }
+
+.mag-component-list {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    background-color: #333;
+    width: 100%; }
+    .mag-component-list.hidden {
+        display: none; }
+    .mag-component-list > .item {
+        cursor: pointer;
+        padding: 0 12px;
+        vertical-align: middle;
+        height: 72px;
+        line-height: 72px; }
+        .mag-component-list > .item.mark {
+            background-color: green;
+            color: black; }
+        .mag-component-list > .item.focus {
+            background-color: orange;
+            color: black; }
+        .mag-component-list > .item.focus.mark {
+            background-color: #ae7200;
+            color: white; }
+    .mag-component-list.horizontal {
+        display: table;
+        table-layout: fixed;
+        width: 100%; }
+        .mag-component-list.horizontal > .item {
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle; }
+
+.mag-component-layout {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    display: table;
+    width: 100%; }
+    .mag-component-layout.hidden {
+        display: none; }
+    .mag-component-layout > div {
+        display: table-cell;
+        text-align: left;
+        vertical-align: middle;
+        height: 100%; }
+
 .mag-component-footer {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
