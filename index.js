@@ -7,7 +7,7 @@
 
 'use strict';
 
-var List = require('stb-component-list'),
+var List = require('mag-component-list'),
     Layout = require('mag-component-layout');
 
 /**
