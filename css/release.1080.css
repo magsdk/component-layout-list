@@ -73,27 +73,27 @@
         vertical-align: middle;
         height: 100%; }
 
-.mag-component-footer {
+.mag-component-layout-list {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     position: relative; }
-    .mag-component-footer.hidden {
+    .mag-component-layout-list.hidden {
         display: none; }
-    .mag-component-footer > .body > .item > .mag-component-layout > .icon {
+    .mag-component-layout-list > .body > .item > .mag-component-layout > .icon {
         width: 84px;
         font-family: 'icons';
         text-align: center; }
-        .mag-component-footer > .body > .item > .mag-component-layout > .icon.yellow {
+        .mag-component-layout-list > .body > .item > .mag-component-layout > .icon.yellow {
             color: #FEC500; }
-        .mag-component-footer > .body > .item > .mag-component-layout > .icon.red {
+        .mag-component-layout-list > .body > .item > .mag-component-layout > .icon.red {
             color: #FF0000; }
-        .mag-component-footer > .body > .item > .mag-component-layout > .icon.green {
+        .mag-component-layout-list > .body > .item > .mag-component-layout > .icon.green {
             color: #04E900; }
-        .mag-component-footer > .body > .item > .mag-component-layout > .icon.blue {
+        .mag-component-layout-list > .body > .item > .mag-component-layout > .icon.blue {
             color: #1CACFF; }
-    .mag-component-footer > .body > .item > .mag-component-layout > .number {
+    .mag-component-layout-list > .body > .item > .mag-component-layout > .number {
         width: 84px; }
-    .mag-component-footer .noData {
+    .mag-component-layout-list .noData {
         position: absolute;
         height: 100%;
         width: 100%;
@@ -102,15 +102,15 @@
         left: 0;
         right: 0;
         bottom: 0; }
-        .mag-component-footer .noData:before {
+        .mag-component-layout-list .noData:before {
             display: inline-block;
             height: 100%;
             vertical-align: middle;
             content: ""; }
-        .mag-component-footer .noData > div {
+        .mag-component-layout-list .noData > div {
             display: inline-block;
             vertical-align: middle;
             width: 100%;
             text-align: center; }
-        .mag-component-footer .noData.hidden {
+        .mag-component-layout-list .noData.hidden {
             visibility: hidden; }
