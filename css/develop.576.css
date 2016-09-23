@@ -1,73 +1,3 @@
-.stb-component-list {
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    background-color: #333;
-    width: 100%;
-    outline: 1px dashed #005000;
-    outline-offset: -1px; }
-    .stb-component-list.hidden {
-        display: none; }
-    .stb-component-list > .item {
-        cursor: pointer;
-        padding: 0 5px;
-        vertical-align: middle;
-        height: 38.4px;
-        line-height: 38.4px; }
-        .stb-component-list > .item.mark {
-            background-color: green;
-            color: black; }
-        .stb-component-list > .item.focus {
-            background-color: orange;
-            color: black; }
-        .stb-component-list > .item.focus.mark {
-            background-color: #ae7200;
-            color: white; }
-    .stb-component-list.horizontal {
-        display: table;
-        table-layout: fixed;
-        width: 100%; }
-        .stb-component-list.horizontal > .item {
-            display: table-cell;
-            text-align: center;
-            vertical-align: middle; }
-    .stb-component-list.focus {
-        outline: 1px dashed red; }
-
-.mag-component-list {
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    background-color: #333;
-    width: 100%;
-    outline: 1px dashed #005000;
-    outline-offset: -1px; }
-    .mag-component-list.hidden {
-        display: none; }
-    .mag-component-list > .item {
-        cursor: pointer;
-        padding: 0 5px;
-        vertical-align: middle;
-        height: 38.4px;
-        line-height: 38.4px; }
-        .mag-component-list > .item.mark {
-            background-color: green;
-            color: black; }
-        .mag-component-list > .item.focus {
-            background-color: orange;
-            color: black; }
-        .mag-component-list > .item.focus.mark {
-            background-color: #ae7200;
-            color: white; }
-    .mag-component-list.horizontal {
-        display: table;
-        table-layout: fixed;
-        width: 100%; }
-        .mag-component-list.horizontal > .item {
-            display: table-cell;
-            text-align: center;
-            vertical-align: middle; }
-    .mag-component-list.focus {
-        outline: 1px dashed red; }
-
 .mag-component-layout {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -88,11 +18,61 @@
 .mag-component-layout-list {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
+    background-color: #333;
+    width: 100%;
+    background-color: #333;
+    width: 100%;
     position: relative;
     outline: 1px dashed #005000;
     outline-offset: -1px; }
     .mag-component-layout-list.hidden {
         display: none; }
+    .mag-component-layout-list > .item {
+        cursor: pointer;
+        padding: 0 5px;
+        vertical-align: middle;
+        height: 38.4px;
+        line-height: 38.4px; }
+        .mag-component-layout-list > .item.mark {
+            background-color: green;
+            color: black; }
+        .mag-component-layout-list > .item.focus {
+            background-color: orange;
+            color: black; }
+        .mag-component-layout-list > .item.focus.mark {
+            background-color: #ae7200;
+            color: white; }
+    .mag-component-layout-list.horizontal {
+        display: table;
+        table-layout: fixed;
+        width: 100%; }
+        .mag-component-layout-list.horizontal > .item {
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle; }
+    .mag-component-layout-list .item {
+        cursor: pointer;
+        padding: 0 5px;
+        vertical-align: middle;
+        height: 38.4px;
+        line-height: 38.4px; }
+        .mag-component-layout-list .item.mark {
+            background-color: green;
+            color: black; }
+        .mag-component-layout-list .item.focus {
+            background-color: orange;
+            color: black; }
+        .mag-component-layout-list .item.focus.mark {
+            background-color: #ae7200;
+            color: white; }
+    .mag-component-layout-list .mag-component-list.horizontal {
+        display: table;
+        table-layout: fixed;
+        width: 100%; }
+        .mag-component-layout-list .mag-component-list.horizontal > .item {
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle; }
     .mag-component-layout-list > .body > .item > .mag-component-layout > .icon {
         width: 67.2px;
         font-family: 'icons';
