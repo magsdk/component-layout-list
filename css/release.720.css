@@ -1,16 +1,3 @@
-.mag-component-layout {
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    display: table;
-    width: 100%; }
-    .mag-component-layout.hidden {
-        display: none; }
-    .mag-component-layout > div {
-        display: table-cell;
-        text-align: left;
-        vertical-align: middle;
-        height: 100%; }
-
 .mag-component-layout-list {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -44,26 +31,26 @@
             display: table-cell;
             text-align: center;
             vertical-align: middle; }
-    .mag-component-layout-list .item {
+    .mag-component-layout-list > .body > .item {
         cursor: pointer;
         padding: 0 8px;
         vertical-align: middle;
         height: 48px;
         line-height: 48px; }
-        .mag-component-layout-list .item.mark {
+        .mag-component-layout-list > .body > .item.mark {
             background-color: green;
             color: black; }
-        .mag-component-layout-list .item.focus {
+        .mag-component-layout-list > .body > .item.focus {
             background-color: orange;
             color: black; }
-        .mag-component-layout-list .item.focus.mark {
+        .mag-component-layout-list > .body > .item.focus.mark {
             background-color: #ae7200;
             color: white; }
-    .mag-component-layout-list .mag-component-list.horizontal {
+    .mag-component-layout-list .horizontal {
         display: table;
         table-layout: fixed;
         width: 100%; }
-        .mag-component-layout-list .mag-component-list.horizontal > .item {
+        .mag-component-layout-list .horizontal > .item {
             display: table-cell;
             text-align: center;
             vertical-align: middle; }
