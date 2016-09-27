@@ -4,28 +4,11 @@
 @mixin mag-component-layout-list {
     > .body {
         > .item {
-            > .mag-component-layout {
-                > .icon {
-                    width: $panelTitleHeight;
-                    font-family: 'icons';
-                    text-align: center;
-                    &.yellow {
-                        color: #FEC500;
-                    }
-                    &.red {
-                        color: #FF0000;
-                    }
-                    &.green {
-                        color: #04E900;
-                    }
-                    &.blue {
-                        color: #1CACFF;
-                    }
-                }
+            > div {
+                @include mag-component-layout;
                 > .number {
                     width: $panelTitleHeight;
                 }
-
             }
         }
     }

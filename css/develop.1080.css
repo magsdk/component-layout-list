@@ -39,37 +39,24 @@
         vertical-align: middle;
         height: 72px;
         line-height: 72px; }
-        .mag-component-layout-list > .body > .item.mark {
-            background-color: green;
-            color: black; }
-        .mag-component-layout-list > .body > .item.focus {
-            background-color: orange;
-            color: black; }
-        .mag-component-layout-list > .body > .item.focus.mark {
-            background-color: #ae7200;
-            color: white; }
-    .mag-component-layout-list .horizontal {
+    .mag-component-layout-list.horizontal {
         display: table;
         table-layout: fixed;
         width: 100%; }
-        .mag-component-layout-list .horizontal > .item {
+        .mag-component-layout-list.horizontal > .item {
             display: table-cell;
             text-align: center;
             vertical-align: middle; }
-    .mag-component-layout-list > .body > .item > .mag-component-layout > .icon {
-        width: 84px;
-        font-family: 'icons';
-        text-align: center; }
-        .mag-component-layout-list > .body > .item > .mag-component-layout > .icon.yellow {
-            color: #FEC500; }
-        .mag-component-layout-list > .body > .item > .mag-component-layout > .icon.red {
-            color: #FF0000; }
-        .mag-component-layout-list > .body > .item > .mag-component-layout > .icon.green {
-            color: #04E900; }
-        .mag-component-layout-list > .body > .item > .mag-component-layout > .icon.blue {
-            color: #1CACFF; }
-    .mag-component-layout-list > .body > .item > .mag-component-layout > .number {
-        width: 84px; }
+    .mag-component-layout-list > .body > .item > div {
+        display: table;
+        width: 100%; }
+        .mag-component-layout-list > .body > .item > div div {
+            display: table-cell;
+            text-align: left;
+            vertical-align: middle;
+            height: 100%; }
+        .mag-component-layout-list > .body > .item > div > .number {
+            width: 84px; }
     .mag-component-layout-list .noData {
         position: absolute;
         height: 100%;
