@@ -16,49 +16,14 @@
     -webkit-box-sizing: border-box;
     background-color: #333;
     width: 100%;
-    background-color: #333;
-    width: 100%;
     position: relative; }
     .mag-component-layout-list.hidden {
         display: none; }
-    .mag-component-layout-list > .item {
-        cursor: pointer;
-        padding: 0 8px;
-        vertical-align: middle;
-        height: 48px;
-        line-height: 48px; }
-        .mag-component-layout-list > .item.mark {
-            background-color: green;
-            color: black; }
-        .mag-component-layout-list > .item.focus {
-            background-color: orange;
-            color: black; }
-        .mag-component-layout-list > .item.focus.mark {
-            background-color: #ae7200;
-            color: white; }
-    .mag-component-layout-list.horizontal {
-        display: table;
-        table-layout: fixed;
-        width: 100%; }
-        .mag-component-layout-list.horizontal > .item {
-            display: table-cell;
-            text-align: center;
-            vertical-align: middle; }
     .mag-component-layout-list .item {
         cursor: pointer;
-        padding: 0 8px;
         vertical-align: middle;
         height: 48px;
         line-height: 48px; }
-        .mag-component-layout-list .item.mark {
-            background-color: green;
-            color: black; }
-        .mag-component-layout-list .item.focus {
-            background-color: orange;
-            color: black; }
-        .mag-component-layout-list .item.focus.mark {
-            background-color: #ae7200;
-            color: white; }
     .mag-component-layout-list .mag-component-list.horizontal {
         display: table;
         table-layout: fixed;
