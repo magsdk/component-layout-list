@@ -22,7 +22,7 @@
     .mag-component-layout-list > .body > .item > div {
         display: table;
         width: 100%; }
-        .mag-component-layout-list > .body > .item > div div {
+        .mag-component-layout-list > .body > .item > div > div {
             display: table-cell;
             text-align: left;
             vertical-align: middle;
