@@ -190,15 +190,15 @@ LayoutList.prototype.renderItemDefault = function ( $item, config ) {
 };
 
 
-// LayoutList.prototype.setData = function ( config ) {
-//     List.prototype.setData.call(this, config);
-//
-//     if ( config.data && config.data.length ) {
-//         this.$noData.classList.add('hidden');
-//     } else {
-//         this.$noData.classList.remove('hidden');
-//     }
-// };
+LayoutList.prototype.setData = function ( config ) {
+    List.prototype.setData.call(this, config);
+
+    if ( config.data && config.data.length ) {
+        this.$noData.classList.add('hidden');
+    } else {
+        this.$noData.classList.remove('hidden');
+    }
+};
 
 
 LayoutList.prototype.init = function ( config ) {
