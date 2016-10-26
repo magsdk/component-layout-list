@@ -186,7 +186,6 @@ LayoutList.prototype.renderItemDefault = function ( $item, config ) {
         $item.ready = true;
     }
     $item.value = config.value || {};
-
 };
 
 
