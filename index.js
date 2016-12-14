@@ -210,6 +210,7 @@ LayoutList.prototype.init = function ( config ) {
                 throw new Error(__filename + ': wrong config.$noData type');
             }
         }
+
         this.$noData.innerHTML = '';
         if ( config.noData instanceof Element ) {
             this.$noData.appendChild(config.noData);
