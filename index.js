@@ -165,7 +165,8 @@ LayoutList.prototype.renderItemDefault = function ( $item, config ) {
 
         layout = new Layout({
             focusable: false,
-            data: config.items
+            data: config.items,
+            className: config.className
         });
 
         $item.appendChild(layout.$node);
