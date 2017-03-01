@@ -91,7 +91,7 @@ function LayoutList ( config ) {
 
     //config.className = 'layoutList ' + (config.className || '');
 
-    config.propagate = config.propagate || true;
+    config.propagate = config.propagate !== undefined ? config.propagate : true;
 
     /**
      * Set data layout to be fixed to cache HTML elements
