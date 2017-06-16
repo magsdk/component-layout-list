@@ -91,7 +91,7 @@ function LayoutList ( config ) {
 
     //config.className = 'layoutList ' + (config.className || '');
 
-    config.propagate = config.propagate !== undefined ? config.propagate : true;
+    config.propagate = config.propagate === undefined ? true : config.propagate;
 
     /**
      * Set data layout to be fixed to cache HTML elements
@@ -177,7 +177,7 @@ LayoutList.prototype.renderItemDefault = function ( $item, config ) {
         // focus layoutList if click on layout
         layout.addListener('click', function () {
             // add inner property to set that event comes from inner component
-            this.parent.emit('click:item', {$item: $item, inner: true});
+            layout.parent.emit('click:item', {$item: $item, inner: true});
         });
 
         if ( config.click ) {
@@ -223,9 +223,9 @@ LayoutList.prototype.init = function ( config ) {
     }
 
     if ( config.data && config.data.length ) {
-       this.$noData.classList.add('hidden');
+        this.$noData.classList.add('hidden');
     } else {
-       this.$noData.classList.remove('hidden');
+        this.$noData.classList.remove('hidden');
     }
 };
 
