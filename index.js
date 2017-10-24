@@ -148,13 +148,18 @@ LayoutList.prototype.name = 'mag-component-layout-list';
  * @param {Object} config to render layout element
  */
 LayoutList.prototype.renderItemDefault = function ( $item, config ) {
-    var layout, i;
+    var layout,
+        currentNode,
+        currentData,
+        i;
 
-    if ( $item.ready && this.fixedData && !$item.innerHTML.length ) {
+    if ( $item.ready && this.fixedData ) {
         for ( i = 0; i < config.items.length; i++ ) {
-            if ( typeof config.items[i].value === 'string' ) {
-                $item.layout.$node.childNodes[i].innerText = config.items[i].value;
-                $item.layout.$node.childNodes[i].className = config.items[i].className;
+            currentData = config.items[i];
+            if ( typeof currentData.value === 'string' || currentData.value === undefined ) {
+                currentNode = $item.layout.$node.childNodes[i];
+                currentNode.innerText = currentData.value || '';
+                currentNode.className = currentData.className || '';
             }
         }
     } else {
