@@ -148,7 +148,7 @@ LayoutList.prototype.name = 'mag-component-layout-list';
  * @param {Object} config to render layout element
  */
 LayoutList.prototype.renderItemDefault = function ( $item, config ) {
-    var layout,
+    var layout, layoutConfig,
         currentNode,
         currentData,
         i;
@@ -168,11 +168,14 @@ LayoutList.prototype.renderItemDefault = function ( $item, config ) {
             $item.removeChild($item.firstChild);
         }
 
-        layout = new Layout({
+        layoutConfig = {
             focusable: false,
-            data: config.items,
-            className: config.className
-        });
+            data: config.items
+        }
+
+        if ( config.className ) {
+            layoutConfig.className = config.className;
+        }
 
         $item.appendChild(layout.$node);
         $item.layout = layout;
