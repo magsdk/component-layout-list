@@ -171,7 +171,7 @@ LayoutList.prototype.renderItemDefault = function ( $item, config ) {
         layoutConfig = {
             focusable: false,
             data: config.items
-        }
+        };
 
         if ( config.className ) {
             layoutConfig.className = config.className;
