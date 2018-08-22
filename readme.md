@@ -51,7 +51,31 @@ var layoutList = new LayoutList({
                 HTMLElement2
             ],
             value: someItemData2
-        }
+        },
+        {
+            items: [
+                  {
+                     className: 'star'
+                  },
+                  'Some text'
+              ],
+              click: function () {
+                  // do something
+              }
+          },
+          {
+              items: [
+                  'Hello world',
+                  {
+                      value: 'hi',
+                      className: 'status'
+                  }
+              ],
+              value:{
+                  uri: 'http://55.55.55.55/some'
+              },
+              click: someHandler
+          }
         
     ],
 
@@ -80,9 +104,41 @@ To change data after creation:
 layoutList.setData({
     focusIndex: 0,
     data: [
-        {state: false, title: 'Some title 1', value: 'value 1'},
-        {state: true, title: 'Some title 2', value: 'value 2'},
-        {state: false, title: 'Some title 3', value: 'value 3'}
+        {
+            items: [
+                  {
+                     className: 'star'
+                  },
+                  'Some text'
+              ],
+              click: function () {
+                  // do something
+              }
+          },
+          {
+              items: [
+                  'Hello world',
+                  {
+                      value: 'hi',
+                      className: 'status'
+                  }
+              ],
+              value:{
+                  uri: 'http://55.55.55.55/some'
+              },
+              click: someHandler
+          },
+          {
+              items: [
+                  {
+                      className: 'big',
+                      value: ' Some'
+                  },
+                  {
+                      value: new Input()
+                  }
+              ]
+          }
     ]
 });
 ```
