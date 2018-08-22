@@ -27,7 +27,7 @@ Add the singleton to the scope:
 var LayoutList = require('mag-component-layout-list');
 ```
 
-Create check list instance:
+Create layout list instance:
 
 ```js
 var layoutList = new LayoutList({
