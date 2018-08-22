@@ -20,7 +20,7 @@ var List = require('mag-component-list'),
  * @param {Element} [config.noData=''] element or string to display if set empty data
  *
  * @example
- * var CheckList = require('../stb/ui/layout.list'),
+ * var LayoutList = require('mag-component-layout-list'),
  *     list = new LayoutList({
  *         propagate: true,
  *         size: 7,
