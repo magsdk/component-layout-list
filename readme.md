@@ -9,6 +9,7 @@ Layout list component
 
 
 Layout list is a component to build user interface, an instance of [Component](https://github.com/stbsdk/component) module.
+It is based on [mag-component-list](https://github.com/magsdk/component-list) and [mag-component-layout](https://github.com/magsdk/component-layout).
 
 
 ## Installation ##
@@ -23,9 +24,74 @@ npm install mag-component-layout-list
 Add the singleton to the scope:
 
 ```js
-var list = require('mag-component-layout-list');
+var LayoutList = require('mag-component-layout-list');
 ```
 
+Create check list instance:
+
+```js
+var layoutList = new LayoutList({
+    // mag-component-list config
+    cycle: false,
+    className: 'list',
+
+    data: [
+        {
+            // mag-component-layout config.data
+            items: [
+                new Button({value: 'Ok'}),
+                new Button({value: 'Cancel'}),
+                new Button({value: 'Exit'})
+            ]
+        },
+        {
+            // mag-component-layout config.data
+            items: [
+                HTMLElement1,
+                HTMLElement2
+            ],
+            value: someItemData2
+        }
+        
+    ],
+
+    // custom render function
+    render: function ( $item, config ) {},
+
+    noData: 'No items',
+    fixedData: true,
+    size: 3,
+    focusIndex: 0,
+    propagate: false,
+    type: LayoutList.prototype.TYPE_HORIZONTAL,
+    events: {
+        'focus:item': function ( event ) {
+            console.log(event);
+        },
+        'click:item': function ( event ) {
+            console.log(event);
+        }
+    }
+});
+
+To change data after creation:
+
+```js
+layoutList.setData({
+    focusIndex: 0,
+    data: [
+        {state: false, title: 'Some title 1', value: 'value 1'},
+        {state: true, title: 'Some title 2', value: 'value 2'},
+        {state: false, title: 'Some title 3', value: 'value 3'}
+    ]
+});
+```
+
+To change focus position:
+
+```js
+layoutList.focusIndex(index);
+```
 
 ## Development mode ##
 
