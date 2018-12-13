@@ -83,6 +83,11 @@ function LayoutList ( config ) {
     this.handlers = {};
 
     /**
+     * Hash map of layouts links
+     */
+    this.layouts = {};
+
+    /**
      * No data placeholder
      *
      * @type {Element}
@@ -178,6 +183,10 @@ LayoutList.prototype.renderItemDefault = function ( $item, config ) {
         }
 
         layout = new Layout(layoutConfig);
+
+        if ( config.name ) {
+            this.layouts[config.name] = layout;
+        }
 
         $item.appendChild(layout.$node);
         $item.layout = layout;
