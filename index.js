@@ -30,13 +30,15 @@ var List = require('mag-component-list'),
  *                 {
  *                     items: [
  *                         {
- *                             className: 'star'
+ *                             className: 'star',
+ *                             name: '$text'
  *                         },
  *                         'Some text'
  *                     ],
  *                     click: function () {
  *                         // do something
- *                     }
+ *                     },
+ *                     name: 'starItem'
  *                 },
  *                 {
  *                     items: [
@@ -71,6 +73,9 @@ var List = require('mag-component-list'),
  *                 }
  *             ]
  * });
+ *
+ * list.layouts.starItem.$text.innerText = 'new Text';
+ *
  */
 function LayoutList ( config ) {
     var self = this;
