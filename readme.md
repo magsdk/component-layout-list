@@ -55,13 +55,18 @@ var layoutList = new LayoutList({
         {
             items: [
                   {
-                     className: 'star'
+                     className: 'star',
+                     name: '$icon'
                   },
-                  'Some text'
+                  {
+                      value: 'Some text',
+                      name: '$text'
+                  }
               ],
               click: function () {
                   // do something
-              }
+              },
+              name: 'starItem'
           },
           {
               items: [
@@ -97,6 +102,9 @@ var layoutList = new LayoutList({
         }
     }
 });
+
+layoutList.links.starItem.links.$text.innerText = 'new cool text';
+
 ```
 
 To change data after creation:
