@@ -30,13 +30,15 @@ var List = require('mag-component-list'),
  *                 {
  *                     items: [
  *                         {
- *                             className: 'star'
+ *                             className: 'star',
+ *                             name: '$text'
  *                         },
  *                         'Some text'
  *                     ],
  *                     click: function () {
  *                         // do something
- *                     }
+ *                     },
+ *                     name: 'starItem'
  *                 },
  *                 {
  *                     items: [
@@ -71,6 +73,9 @@ var List = require('mag-component-list'),
  *                 }
  *             ]
  * });
+ *
+ * list.links.starItem.links.$text.innerText = 'new Text';
+ *
  */
 function LayoutList ( config ) {
     var self = this;
@@ -81,6 +86,11 @@ function LayoutList ( config ) {
      * Elements handlers
      */
     this.handlers = {};
+
+    /**
+     * Hash map of layouts links
+     */
+    this.links = {};
 
     /**
      * No data placeholder
@@ -179,6 +189,10 @@ LayoutList.prototype.renderItemDefault = function ( $item, config ) {
 
         layout = new Layout(layoutConfig);
 
+        if ( config.name ) {
+            this.links[config.name] = layout;
+        }
+
         $item.appendChild(layout.$node);
         $item.layout = layout;
         layout.parent = this;
@@ -201,6 +215,7 @@ LayoutList.prototype.renderItemDefault = function ( $item, config ) {
 
 
 LayoutList.prototype.setData = function ( config ) {
+    this.links = {};
     List.prototype.setData.call(this, config);
 
     if ( config.data && config.data.length ) {
