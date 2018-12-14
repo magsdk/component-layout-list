@@ -74,7 +74,7 @@ var List = require('mag-component-list'),
  *             ]
  * });
  *
- * list.layouts.starItem.$text.innerText = 'new Text';
+ * list.links.starItem.links.$text.innerText = 'new Text';
  *
  */
 function LayoutList ( config ) {
@@ -90,7 +90,7 @@ function LayoutList ( config ) {
     /**
      * Hash map of layouts links
      */
-    this.layouts = {};
+    this.links = {};
 
     /**
      * No data placeholder
@@ -190,7 +190,7 @@ LayoutList.prototype.renderItemDefault = function ( $item, config ) {
         layout = new Layout(layoutConfig);
 
         if ( config.name ) {
-            this.layouts[config.name] = layout;
+            this.links[config.name] = layout;
         }
 
         $item.appendChild(layout.$node);
@@ -215,6 +215,7 @@ LayoutList.prototype.renderItemDefault = function ( $item, config ) {
 
 
 LayoutList.prototype.setData = function ( config ) {
+    this.links = {};
     List.prototype.setData.call(this, config);
 
     if ( config.data && config.data.length ) {
